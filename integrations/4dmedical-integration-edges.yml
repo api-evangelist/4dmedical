@@ -1,0 +1,21 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/4dmedical/integrations
+- https://n8n.io/integrations/4dmedical/
+- https://composio.dev/toolkits/4dmedical
+- https://monid.ai/tools/4dmedical
+checked:
+- https://4dmedical.com/
+- https://4dmedical.com/support/
+- https://4dmedical.com/partners/
+- https://zapier.com/apps/4dmedical/integrations
+- https://composio.dev/toolkits/4dmedical
+- https://monid.ai/tools/4dmedical
+- https://n8n.io/integrations/4dmedical/
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: Checked, no integration evidence. 4DMedical publishes no API, no integrations or partners page (4dmedical.com/partners/
+  -> 404), and has no Zapier app listing (404). Its homepage names no integration partners.

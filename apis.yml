@@ -1,23 +1,119 @@
 aid: 4dmedical
+
 name: 4DMedical
-description: '4DMedical is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 4DMedical is a medical imaging technology company with offices in Melbourne, Australia and Los Angeles, California. It produces software and hardware products for non-invasive, quantitative imaging and analysis of lung function, including CT:VQ non-contrast ventilation-perfusion CT, CT LVAS and XV LVAS lung ventilation analysis, IQ-UIP early IPF detection, lung density and texture analysis, pulmonary hypertension assessment, and the XV Scanner for lung function research. It works with health systems, researchers and clinical teams on respiratory and cardiopulmonary imaging. No public developer API or developer portal was found on its site.
+
 url: https://raw.githubusercontent.com/api-evangelist/4dmedical/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Healthcare
+- Medical Imaging
+- Lung Function
+- Respiratory
+- Software
+- Australia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://4dmedical.com/wp-content/uploads/2022/09/4D-logo-on-navy.png
+
 common:
+- type: Hosts
+  url: hosts/4dmedical-hosts.yml
+- type: Vendors
+  url: vendors/4dmedical-vendors.yml
+- type: DomainSecurity
+  url: security/4dmedical-domain-security.yml
 - type: Website
   url: https://4dmedical.com/
+- type: AboutUs
+  url: https://4dmedical.com/about/about-us/
+- type: Blog
+  url: https://4dmedical.com/blog/
+- type: RSSFeed
+  url: https://4dmedical.com/feed/
+- type: Newsroom
+  url: https://4dmedical.com/news/
+- type: Leadership
+  url: https://4dmedical.com/about/our-team/
+- type: Careers
+  url: https://4dmedical.com/about/careers/
+- type: Support
+  url: https://4dmedical.com/support/
+- type: Contact
+  url: https://4dmedical.com/contact-us/
+- type: InvestorRelations
+  url: https://4dmedical.com/investor/
+- type: TermsOfService
+  url: https://4dmedical.com/terms/
+- type: PrivacyPolicy
+  url: https://4dmedical.com/privacy-policy/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/4dx/
+- type: Twitter
+  url: https://x.com/4DMedicalXV
+- type: YouTube
+  url: https://www.youtube.com/channel/UCMTHSbaJ310Iajb8MeflRAg
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website 4dmedical.com verified by its own title/og:site_name "4DMedical"; all pointers read from the homepage and fetched 200 on 2026-10-21. No developer portal, documentation, API reference, pricing, sign-up or GitHub org is published.
+  evidence:
+  - url: https://4dmedical.com/
+    status: 200
+  - url: https://4dmedical.com/about/about-us/
+    status: 200
+  - url: https://4dmedical.com/blog/
+    status: 200
+  - url: https://4dmedical.com/feed/
+    status: 200
+  - url: https://4dmedical.com/news/
+    status: 200
+  - url: https://4dmedical.com/about/our-team/
+    status: 200
+  - url: https://4dmedical.com/about/careers/
+    status: 200
+  - url: https://4dmedical.com/support/
+    status: 200
+  - url: https://4dmedical.com/contact-us/
+    status: 200
+  - url: https://4dmedical.com/investor/
+    status: 200
+  - url: https://4dmedical.com/terms/
+    status: 200
+  - url: https://4dmedical.com/privacy-policy/
+    status: 200
+  - url: https://www.linkedin.com/company/4dx/
+    status: 200
+  - url: https://x.com/4DMedicalXV
+    status: 200
+  - url: https://www.youtube.com/channel/UCMTHSbaJ310Iajb8MeflRAg
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

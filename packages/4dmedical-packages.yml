@@ -1,0 +1,8 @@
+generated: '2026-10-21'
+method: none
+note: >-
+  Checked, nothing found. No first-party SDK, client library or CLI is published.
+  registry.npmjs.org/4dmedical -> 404; pypi.org/pypi/4dmedical/json -> 404;
+  api.github.com/orgs/4DMedical -> 404. 4dmedical.com links no developer, SDK or API docs,
+  and a web search turned up no 4DMedical developer surface.
+packages: []

@@ -1,0 +1,132 @@
+generated: '2026-10-21'
+method: searched
+source:
+- https://4dmedical.com/privacy-policy/
+- https://4dmedical.com/terms/
+name: 4DMedical regulatory posture
+provider: 4dmedical
+frameworks_named:
+- Privacy Act 1988 (Cth)
+- EU GDPR
+- HIPAA (business associate)
+- California Privacy Laws
+signals:
+  data_subject_request:
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: You may request access to any personal information we hold about you at any time by contacting us as described in the “How to contact us” section below.  We will provide access to that information in accordance with the Privacy Act, subject to any exemptions that may apply.
+    url: https://4dmedical.com/privacy-policy/
+    section: How can you access and correct your personal information?
+    note: Access requests under the Australian Privacy Act, via the contact details in the policy.
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: The right to request erasure of personal information we hold about you, for example if the personal information is no longer necessary to provide services to you.
+    url: https://4dmedical.com/privacy-policy/
+    section: How can you access and correct your personal information?
+    note: Erasure right listed among GDPR-style rights.
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: The right to data portability. In some circumstances you have the right to be provided with a copy of the personal information we hold about you in a structured, machine-readable and commonly used format.
+    url: https://4dmedical.com/privacy-policy/
+    section: How can you access and correct your personal information?
+    note: Portability in a machine-readable format, in some circumstances.
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Right to Deletion of Personal Information. You have the right to request that we delete personal information about you that we have collected from you subject to certain exceptions.
+    url: https://4dmedical.com/privacy-policy/
+    section: HIPAA / California privacy rights
+    note: California deletion right, subject to exceptions.
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We try to respond to all legitimate requests within 7 days. Occasionally it could take us longer than 7 days if your request is particularly complex or you have made a number of requests. In this case, we will notify you and keep you updated.
+    url: https://4dmedical.com/terms/
+    section: Privacy notice on the terms page
+    note: Response target of 7 days for data subject requests.
+  subprocessors:
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Specific External Third Parties (service providers acting as sub-processors who provide IT and system administration services;
+    url: https://4dmedical.com/terms/
+    section: Disclosures of Your Personal Data
+    note: Names categories of sub-processors only; I found no list of named subprocessors.
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: (d) In accordance with 45 CFR 164.502(e)(1)(ii) and 164.308(b)(2), if applicable, ensure that any subcontractors that create, receive, maintain, or transmit protected health information on behalf of the Business Associate agree to the same restrictions, conditions, and requirements that apply to the Business Associate with respect to such information;
+    url: https://4dmedical.com/terms/
+    section: Imbio Portal Terms - Business Associate obligations
+    note: The BAA flows the HIPAA restrictions down to subcontractors.
+  data_residency:
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Your personal information may be stored through third party service providers located in Australia, New Zealand, the United Kingdom, the European Union or the United States of America.  We may disclose your personal information to overseas recipients, such as to our subsidiaries and service providers located overseas, in order for them to provide their products and services, and to obtain services connected with our business.
+    url: https://4dmedical.com/privacy-policy/
+    section: How do we store personal information?
+    note: Storage may be in AU, NZ, UK, EU or US; no option to choose a region is stated.
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Your personal information may be transferred to recipients located in the United States of America. The United States of America does not have data protection laws as comprehensive as Australia’s, and we will accordingly take commercially reasonable steps to secure a contractual commitment from the recipient to handle your information in accordance with the Privacy Act and the Australian Privacy Principles (except where you are located in the United States).
+    url: https://4dmedical.com/privacy-policy/
+    section: How do we store personal information?
+    note: US transfers are covered by contractual commitments.
+  incident_notification:
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so.
+    url: https://4dmedical.com/terms/
+    section: Data Security
+    note: Breach notification only where the law requires it; no time period given.
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: (c) Report to Covered Entity any use or disclosure of protected health information not provided for by the Agreement of which it becomes aware, including breaches of unsecured protected health information as required at 45 CFR 164.410, and any security incident of which it becomes aware within seventy-two (72) hours.
+    url: https://4dmedical.com/terms/
+    section: Imbio Portal Terms - Business Associate obligations
+    note: Under the BAA, security incidents are reported to the Covered Entity within 72 hours.
+  data_retention:
+  - evidence:
+      source: https://4dmedical.com/privacy-policy/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: Generally, we will retain your personal information for the period necessary for the purposes for which your personal information was collected (as outlined in this Privacy Policy) unless a longer retention period is required by law or if it is reasonably necessary for us to comply with our legal obligations, resolve a dispute or maintain security.
+    url: https://4dmedical.com/privacy-policy/
+    section: How long do we keep your personal information?
+    note: General purpose-limited retention; no fixed periods.
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 1.3 Cessation of Use. Upon expiration or termination of this Agreement, You may no longer utilize the Services and We will terminate your access to the Services. We will delete all of Your data and any outputs You generate as you utilize the Services within thirty (30) days of the expiration or termination of this Agreement.
+    url: https://4dmedical.com/terms/
+    section: Imbio Portal Terms - Term and Termination
+    note: Imbio Portal customer data and outputs are deleted within 30 days of termination.
+  exit_assistance:
+  - evidence:
+      source: https://4dmedical.com/terms/
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: 1.3 Cessation of Use. Upon expiration or termination of this Agreement, You may no longer utilize the Services and We will terminate your access to the Services. We will delete all of Your data and any outputs You generate as you utilize the Services within thirty (30) days of the expiration or termination of this Agreement.
+    url: https://4dmedical.com/terms/
+    section: Imbio Portal Terms - Term and Termination
+    note: On exit, access ends and data is deleted within 30 days. No export or transition help is described.
+notes: Read from the 4DMedical privacy policy and the /terms/ page. That page also carries a GDPR-style privacy notice and the Imbio Portal Terms and Conditions, including a HIPAA BAA (Imbio, LLC is part of the 4DMedical group). No trust center, accessibility statement, AI transparency, GPC or subprocessor list was found on these pages. The CCPA section states that 4DMedical does not sell or share personal information.
